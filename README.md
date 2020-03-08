@@ -15,6 +15,7 @@ Finally, it will generage a csv or json file based on output parameter.
 
 - Windows
 - Linux
+- MacOS
 
 ## Usage
 
@@ -23,6 +24,9 @@ Finally, it will generage a csv or json file based on output parameter.
 ./DotNetGitStats.exe -d <local repo dir> -o <output file path>
 
 # linux
+./DotNetGitStats -d <repo dir> -o <output path>
+
+# maxOS
 ./DotNetGitStats -d <repo dir> -o <output path>
 ```
 
