@@ -17,6 +17,8 @@ jobs:
       run: |
            dotnet publish -c Release -o publish/win-x64 -r win-x64 /p:PublishSingleFile=true /p:IncludeSymbolsInSingleFile=true /p:PublishTrimmed=true
            dotnet publish -c Release -o publish/linux-x64 -r linux-x64 /p:PublishSingleFile=true /p:IncludeSymbolsInSingleFile=true /p:PublishTrimmed=true
+           dotnet publish -c Release -o publish/osx-x64 -r osx-x64 /p:PublishSingleFile=true /p:IncludeSymbolsInSingleFile=true /p:PublishTrimmed=true
+
     - name: Upload artifact win-x64
       uses: actions/upload-artifact@v1.0.0
       with:
@@ -32,3 +34,11 @@ jobs:
         name: DotNetGitStats-linux-x64
         # Directory containing files to upload
         path: publish/linux-x64
+
+    - name: Upload artifact osx-x64
+      uses: actions/upload-artifact@v1.0.0
+      with:
+        # Artifact name
+        name: DotNetGitStats-osx-x64
+        # Directory containing files to upload
+        path: publish/osx-x64
