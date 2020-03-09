@@ -2,14 +2,19 @@
 
 ![DotNet GitStats CI](https://github.com/leansoftX/dotnet-gitstats/workflows/DotNet%20GitStats%20CI/badge.svg)
 
-DotNet GitStats is a command line tool made with DotNet Core, it was used for commit log statistic from a git repo.
+DotNet GitStats is a toolkit to build code statistic for git, it's built on top of libgit2 using DotNet. DotNet GitStats provide cross-platform command line tools that can be run on Windows, MacOS and Linux.
 
-Thanks to [libgit2sharp](https://github.com/libgit2/libgit2sharp),
-It could fetch every git commit logs from a standard git repo, and extract commit data from these logs.
+You can use this tool to generate a CVS file which can ben consumed easily using Excel, Power BI and any other data process tools. A sample Power BI report is provided with the repo.
 
-Also, it could calculate line changes between two commits, for example, lines added and lines deleted number.
+![Power BI Report Sample](images/powerbi-report-overview-01.png)
 
-Finally, it will generage a csv or json file based on output parameter.
+## How it works
+
+[libgit2sharp](https://github.com/libgit2/libgit2sharp) is a wonderful tool, it expose every git operation interface to DotNet and Mono which makes DotNet GitStats possible.
+
+DotNet GitStats use [libgit2sharp](https://github.com/libgit2/libgit2sharp) to extract `git log` information and calculate line changes between commits, for example, lines added and lines deleted.
+
+For ease of use, CVS or JSON formats are supported for you to analyze or visualize.
 
 ## Supported Platform
 
@@ -54,8 +59,10 @@ Finally, it will generage a csv or json file based on output parameter.
 
 ![csv sample](images/2020-03-04-09-01-27.png)
 
-## TODOs
+## Roadmap
+
+DotNet GitStats is still at very early stage, please feel free to support issue or PR. Here are some ideas we are exploring down the track.
 
 - [x] Set up Github action for CI
 - [x] Add README content
-- [x] Create POWER BI report using csv file
+- [x] Create Power BI report using csv file
