@@ -4,7 +4,7 @@
 
 DotNet GitStats is a toolkit to build code statistic for git, it's built on top of libgit2 using DotNet. DotNet GitStats provide cross-platform command line tools that can be run on Windows, MacOS and Linux.
 
-You can use this tool to generate a CVS file which can ben consumed easily using Excel, Power BI and any other data process tools. A sample Power BI report is provided with the repo.
+You can use this tool to generate a CSV file which can ben consumed easily using Excel, Power BI and any other data process tools. A sample Power BI report is provided with the repo.
 
 ![Power BI Report Sample](images/powerbi-report-overview-01.png)
 
