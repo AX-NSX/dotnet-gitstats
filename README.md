@@ -14,7 +14,7 @@ You can use this tool to generate a CSV file which can ben consumed easily using
 
 DotNet GitStats use [libgit2sharp](https://github.com/libgit2/libgit2sharp) to extract `git log` information and calculate line changes between commits, for example, lines added and lines deleted.
 
-For ease of use, CVS or JSON formats are supported for you to analyze or visualize.
+For ease of use, CSV or JSON formats are supported for you to analyze or visualize.
 
 ## Supported Platform
 
